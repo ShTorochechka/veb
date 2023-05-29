@@ -1,0 +1,195 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* видос */
+.backg{
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Container{
+   max-width: 1250px;
+   margin: 0 auto;
+}
+
+.App_Content{
+    background-color: rgba(16, 18, 27, 0.2);
+ max-width: 1250px;
+ max-height: 860px;
+ height: 90vh;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+ position: relative;
+ width: 100%;
+ border-radius: 14px;
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ font-size: 15px;
+ font-weight: 500;
+}
+/* шапка */
+.Header{
+    display: flex;
+    align-items: center;
+    height: 58px;
+width: 100%;
+border-bottom: 1px solid rgba(113, 119, 144, 0.2);
+white-space: nowrap;
+}
+
+.circle_menu{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 24px 0 0 0 #f8ce52, 48px 0 0 0 #5fcf65;
+    margin-right: 195px;
+    margin-left: 26px;
+    flex-shrink: 0;
+}
+.Menu{
+    display: flex;
+    align-items: center;
+}
+
+.App{
+    padding: 40px;
+}
+
+.Bell{
+    position: relative;
+}
+.Bell_Img{
+    width: 20px;
+    height: 20px;
+}
+
+.notification_Bell{
+    position: absolute;
+    background-color: #3a6df0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    right: -6px;
+    top: -6px;
+}
+
+.Cloud_Profile{
+    width: 22px;
+    height: 15.5px;
+    margin-left: 32px;
+}
+
+.Photo_Profile{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    margin-left: 32px;
+}
+.Punct_Menu:hover{
+    transition: 100ms;
+    color: var(--theme-color);
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.Punct_Menu{
+ color: rgba(113, 119, 144, 0.7);
+ padding: 20px 30px;
+}
+
+.Search_Line{
+    height: 40px;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    padding-left: 16px;
+    border-radius: 4px;
+  }
+
+  .Search_Line input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #14162b;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px 0 40px;
+    box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+    background-image:url(head/search.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 48%;
+    color: white;
+  }
+
+  .Profile{
+    padding: 0 16px 0 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+/* низ */
+/* левый */
+.Left_side{
+    padding: 26px;
+    border-right: 1px solid var(--border-color);
+}
+
+ .Punct_Left{
+    text-decoration: none;
+    color: #f2edef;
+    font-weight: 400;
+font-size: 14px;
+ }
+
+ .Title_Left{
+    color: rgba(113, 119, 144, 0.7);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 14px;
+ }
+
+ .notification-number {
+    position: absolute;
+    background-color: #3a6df0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    right: -6px;
+    top: -6px;
+ }
+
+.updates {
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-left: auto;
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+}
+/* правый */
