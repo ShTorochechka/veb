@@ -22,29 +22,29 @@ video{
 }
 
 .App_Content{
-    background-color: rgba(16, 18, 27, 0.2);
- max-width: 1250px;
- max-height: 860px;
- height: 90vh;
- display: flex;
- flex-direction: column;
- overflow: hidden;
- position: relative;
- width: 100%;
- border-radius: 14px;
- backdrop-filter: blur(20px);
- -webkit-backdrop-filter: blur(20px);
- font-size: 15px;
- font-weight: 500;
+    background-color: rgba(16, 18, 27, 0.40);
+    max-width: 1250px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border-radius: 14px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 180px;
 }
 /* шапка */
 .Header{
     display: flex;
     align-items: center;
     height: 58px;
-width: 100%;
-border-bottom: 1px solid rgba(113, 119, 144, 0.2);
-white-space: nowrap;
+    width: 100%;
+    border-bottom: 1px solid rgba(113, 119, 144, 0.2);
+    white-space: nowrap;
 }
 
 .circle_menu{
@@ -105,14 +105,13 @@ white-space: nowrap;
 }
 .Punct_Menu:hover{
     transition: 100ms;
-    color: var(--theme-color);
     border-bottom: 2px solid white;
     color: white;
 }
 
 .Punct_Menu{
- color: rgba(113, 119, 144, 0.7);
- padding: 20px 30px;
+    color: rgba(113, 119, 144, 0.7);
+    padding: 20px 30px;
 }
 
 .Search_Line{
@@ -148,17 +147,34 @@ white-space: nowrap;
   }
 
 /* низ */
+.Down{
+    display: flex;
+    justify-content: flex-start;
+}
+
 /* левый */
+.Left_img{
+    margin-right: 8px;
+}
+
 .Left_side{
-    padding: 26px;
-    border-right: 1px solid var(--border-color);
+    max-width: 188px;
+    padding: 20px;
+    border-right: 1px solid rgba(113, 119, 144, 0.7);
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    overflow-y: scroll;
+    flex-basis: 240px;
+    flex-shrink: 0;
 }
 
  .Punct_Left{
     text-decoration: none;
     color: #f2edef;
     font-weight: 400;
-font-size: 14px;
+    font-size: 14px;
+    margin: 5px;
  }
 
  .Title_Left{
@@ -168,6 +184,16 @@ font-size: 14px;
     margin-bottom: 14px;
  }
 
+ 
+.Left_Menu{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.Title_Left{
+    margin-bottom: 10px;
+}
  .notification-number {
     position: absolute;
     background-color: #3a6df0;
@@ -180,16 +206,261 @@ font-size: 14px;
     justify-content: center;
     color: #fff;
     right: -6px;
-    top: -6px;
+    top: -24px;
  }
 
 .updates {
-  position: relative;
-  top: 0;
-  right: 0;
-  margin-left: auto;
-  width: 18px;
-  height: 18px;
-  font-size: 11px;
+    position: relative;
+    top: -10;
+    right: -10;
+    margin-left: 150px;
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
 }
 /* правый */
+.Right_side{
+    display: flex;
+    flex-direction: column;
+}
+
+.Header_Right{
+    /* height: 58px; */
+    width: 1020px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(113, 119, 144, 0.7);
+}
+
+.Right{
+    padding: 20px 30px;
+}
+
+.Main_Right{
+    margin-left: 150px;
+}
+
+.Right_Content{
+    overflow-y: auto;
+    background-color: rgba(16, 18, 27, 0.40);
+    width: 1020px;
+    padding: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 350PX;
+    box-sizing: border-box;
+}
+
+.Right_Stock{
+    background-image: url(Right/cubes.png), 
+    linear-gradient(to right top,
+    #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, 
+    #ff8c51, #ffaa49, #ffc848, #ffe652);
+    width: 850px;
+    height: 180px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.Text_Stock{
+    width: 350px;
+    height: 165px;
+    color: #ebecec;
+}
+.Text_Content{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.Stock_Button{
+    border-radius: 20px;
+    border: none;
+    background-color: #3a6df0;
+    color: #ebecec;
+    padding: 4px 26px;
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.Right_Menu{
+    color: white;
+    padding: 20px 30px;
+}
+
+.Text_img{
+   margin-top: -25px;
+}
+
+/* установка */
+
+.Right_Title{
+    color: rgba(113, 119, 144, 0.7);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15PX;
+    margin-top: 30px;
+}
+
+.Menu_Button{
+    width: 5px;
+height: 5px;
+background-color: rgba(249, 250, 251, 0.55);
+border-radius: 50%;
+box-shadow: 7px 0 0 0 rgba(249, 250, 251, 0.55), 14px 0 0 0 rgba(249, 250, 251, 0.55);
+margin-left: 10px;
+}
+.status_circle{
+    background-color: #3bf083;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.status_Blue{
+    background-color: #396df0;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.Right_list{
+    background-color: rgba(146, 151, 176, 0.13);
+    border: 1px solid rgba(16, 18, 27, 0.40);
+    border-radius: 15px;
+    font-size: 16px;
+    color: #f9fafb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 936px;
+}
+
+.List_P{
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid rgba(113, 119, 144, 0.25);
+    width: 900px;
+    margin: 0px;
+    padding: 18px;
+
+}
+
+.List_PT{
+    border-top: 1px solid rgba(113, 119, 144, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin: 0;
+    padding: 10px 18px;
+
+}
+.List_PT:nth-child(1){
+    border: none;
+}
+.Icon{
+    margin-right: 13px;
+}
+
+.Icon_Text{
+    display: flex;
+    align-items: center;
+}
+
+.Status{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 200px;
+}
+
+
+.Buttons_Install{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.Open{
+    border-radius: 20px;
+    border: 1px solid rgba(249, 250, 251, 0.55);
+    background: none;
+    color: #ebecec;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 0;
+    padding: 6px 24px;
+}
+
+.Update{
+    border-radius: 20px;
+    border: none;
+    background-color: #3a6df0;
+    color: #ebecec;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 0;
+    padding: 6px 24px;
+}
+/* приложения */
+.App_Plan{
+    background-color: rgba(146, 151, 176, 0.13);
+    border: 1px solid rgba(16, 18, 27, 0.40);
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.Apps{
+    display: flex;
+}
+
+.App_Title{
+    color: #ece8ea;
+    display: flex;
+
+}
+
+.Icon_App{
+    margin-right: 10px;
+}
+
+.App_Text{
+    color: #ece8ea;
+    font-size: 14px;
+font-weight: 400;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.App_Button{
+    border-top: 1px solid rgba(113, 119, 144, 0.7);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.App_Buttons{
+    border-radius: 20px;
+    border: none;
+    background-color: #3a6df0;
+    color: #ebecec;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 0;
+    padding: 3px 24px;
+    margin-right: 10px;
+}
